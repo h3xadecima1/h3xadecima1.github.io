@@ -1,6 +1,6 @@
-# Ali Alalwia — Engineering portfolio
+# Ali Alalwia — Electrical Engineering portfolio
 
-Static GitHub Pages website with six detailed project pages. No build tools required.
+Static GitHub Pages website with seven detailed project pages and two supporting embedded-system projects. No build tools required.
 
 ## Publish
 1. Create a public repository named `h3xadecima1.github.io` on GitHub.
