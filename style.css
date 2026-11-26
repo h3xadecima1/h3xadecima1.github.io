@@ -6,3 +6,9 @@
 /* Dark image letterboxing, including the linked image wrapper. */
 .cover a, .gallery-image a { display:block; background-color:#142329; }
 .cover img, .gallery-image img { background-color:#142329 !important; object-fit:contain; }
+
+/* Rotate only the SDR prototype, keeping it contained in its image well. */
+.cover a:has(> img[src="sdr/prototype.jpg"]), .gallery-image a:has(> img[src="sdr/prototype.jpg"]) { display:grid; place-items:center; overflow:hidden; container-type:inline-size; }
+.cover img[src="sdr/prototype.jpg"] { width:225px; height:100cqw; max-width:none; transform:rotate(90deg); margin-block:calc((225px - 100cqw)/2); }
+.gallery-image img[src="sdr/prototype.jpg"] { width:300px; height:100cqw; max-width:none; max-height:none; transform:rotate(90deg); margin-block:calc((300px - 100cqw)/2); }
+@media(max-width:700px){ .cover img[src="sdr/prototype.jpg"] { width:205px; margin-block:calc((205px - 100cqw)/2); } .gallery-image img[src="sdr/prototype.jpg"] { width:300px; height:100cqw; max-height:none; margin-block:calc((300px - 100cqw)/2); } }
